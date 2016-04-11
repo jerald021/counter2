@@ -1,0 +1,19 @@
+<template name="counter">
+    <div>
+        {{#each counters}}
+            <h1>{{this.name}}</h1>
+            <span>{{this.value}}</span>
+
+            {{#if currentUser}}
+            <div>
+                <button id="inc">+</button>
+                <button id="dec">-</button>
+                <button id="reset">RESET</button>
+            </div>
+            {{/if}}
+
+        {{/each}}
+    </div>
+
+
+</template>
